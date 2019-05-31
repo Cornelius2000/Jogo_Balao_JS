@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>Página de teste </title>
+      <h1>  Estoura Balão </h1>
+      <style type="text/css">
+        .bola1{
+            width:50px;
+            height:50px;
+            background-color: #000000;
+            border-radius: 25px;
+            position: absolute;
+        }
+        .bola2{
+            width:45px;
+            height:45px;
+            background-color: blue;
+            border-radius: 25px;
+            position: absolute;
+        }
+        .bola3{
+            width:40px;
+            height:40px;
+            background-color: red;
+            border-radius: 25px;
+            position: absolute;
+        }
+        .bola4{
+            width:35px;
+            height:35px;
+            background-color: green;
+            border-radius: 25px;
+            position: absolute;
+        }
+        .bola5{
+            width:30px;
+            height:30px;
+            background-color: yellow;
+            border-radius: 25px;
+            position: absolute;
+        }
+        #pontos{
+          font-size:50px;
+          color:#434343;
+        }
+      </style>
+      
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="jogo.js">
+    
+    </script>
+
+  </head>
+   <body onload="iniciar()"> <!-- quando iniciar a tela, ele chama a função para iniciar o jogo-->
+       <div class="principal" >
+         <table >	
+         </table>
+         <table  >
+             <tr>
+               <td>
+                   <img src="imagens/balao_azul_grande_estourado.png">
+               </td>
+               <td>
+                 <span id="baloes_estourados" style="font-size: 40px;">	</span>
+               </td>
+             </tr>
+         </table>
+
+         <table style="width: 140px; height: 132px;" >
+             <tr>
+               <td style="background: url('imagens/cronometro.png'); text-align: center;">
+                 <span id="cronometro" style="color: red; font-size: 30px;"></span>
+               </td>
+             </tr>
+         </table>
+       </div>
+       <div id="cenario">
+         
+       </div>
+        <div class="bola"> </div>
+        <div id="pontos"></div>
+      
+  </body>
+</html>
