@@ -2,34 +2,26 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
-
-		<title>Estourando balões</title>
-
 		<script language='Javascript'>
-			
-			function iniciarJogo(){
-					
+			function iniciarJogo(){	
 				var nivelJogo = document.getElementById('nivelJogo').value;
 				window.location.href = "jogo.html?" + nivelJogo;
 			}
 		</script>
 	</head>
-
 	<body>
 		<div>
 			<p>
+				<h3>Estourando balões</h3>
 				<b>Nivel: </b>
 				<select id="nivelJogo">
 					<option value="1">Fácil</option>
 					<option value="2">Normal</option>
 					<option value="3">Difícil</option>
+					<option value="4">Muito Difícil</option>
 				</select>
 			</p><br/>	
-
 			<img src="imagens/iniciar.png" onclick="iniciarJogo()">
-
-
 		</div>
 	</body>
-	
 </html>

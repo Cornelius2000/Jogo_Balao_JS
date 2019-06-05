@@ -1,7 +1,6 @@
 <html>
   <head>
-    <title>Página de teste </title>
-      <h1>  Estoura Balão </h1>
+      <h1 style="  left: 250px; color: DarkGreen;">  Estoura Balão </h1>  
       <style type="text/css">
         .bola1{
             width:50px;
@@ -38,6 +37,13 @@
             border-radius: 25px;
             position: absolute;
         }
+        .bola6{
+            width:20px;
+            height:20px;
+            background-color: BlueViolet;
+            border-radius: 15px;
+            position: absolute;
+        }
         #pontos{
           font-size:50px;
           color:#434343;
@@ -52,19 +58,6 @@
   </head>
    <body onload="iniciar()"> <!-- quando iniciar a tela, ele chama a função para iniciar o jogo-->
        <div class="principal" >
-         <table >	
-         </table>
-         <table  >
-             <tr>
-               <td>
-                   <img src="imagens/balao_azul_grande_estourado.png">
-               </td>
-               <td>
-                 <span id="baloes_estourados" style="font-size: 40px;">	</span>
-               </td>
-             </tr>
-         </table>
-
          <table style="width: 140px; height: 132px;" >
              <tr>
                <td style="background: url('imagens/cronometro.png'); text-align: center;">
@@ -73,11 +66,21 @@
              </tr>
          </table>
        </div>
-       <div id="cenario">
-         
-       </div>
+       <table style="width: 800px; height: 600px; position: absolute; top: 40px; left: 146px; color: black; " >
+           <tr>
+             <td style="background: url('imagens/fundo_cenario.jpg'); text-align: center;">
+               <span id="cenario"></span>
+             </td>
+           </tr>
+       </table>
         <div class="bola"> </div>
-        <div id="pontos"></div>
+        <div id ="pontos" style=" font-size:25px; position: absolute; top: 200px; left: 45px; color: red; "> </div>
+        <div >
+          <table style="width: 41px; height: 40px; position: absolute; top: 200px; left: 0px; color: black; ">
+            <td style="background: url('imagens/balao_azul_pequeno_estourado.png'); text-align: center;">
+              <span id="balao"></span>
+          </table>
+        </div>
       
   </body>
 </html>
